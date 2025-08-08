@@ -185,6 +185,7 @@ section h2 {
     margin-top: 50px;
 }
 
+
 .beneficios-card {
     margin: 10px auto;
     background-color: #fff;
@@ -195,6 +196,7 @@ section h2 {
     text-align: left;
     transition: transform 0.3s ease;
 }
+
 
 .beneficios-card:hover {
     transform: translateY(-5px);
@@ -462,7 +464,6 @@ section h2 {
 }
 
 .planos-card.highlighted {
-    border-color: var(--text-dark);
     background-color: var(--secondary-blue);
     transform: scale(1.03);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -480,7 +481,7 @@ section h2 {
 
 .planos-card .subtitulo {
     color: #666;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     font-size: 0.9em;
 }
 
@@ -488,8 +489,9 @@ section h2 {
     font-size: 3em;
     font-weight: 700;
     color: var(--primary-blue);
-    margin-bottom: 20px;
+    margin: 5px 0; /* reduz o espaçamento acima e abaixo */
 }
+
 
 .planos-card.highlighted .preco {
     color: var(--text-light);
