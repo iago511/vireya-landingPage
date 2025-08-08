@@ -98,7 +98,7 @@ a {
 .hero {
     background-image:
         linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
-        url(fotoheader.png);
+        url(../);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
