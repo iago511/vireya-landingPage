@@ -98,7 +98,7 @@ a {
 .hero {
     background-image:
         linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
-        url(../);
+        url(../img/fotoheader.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -441,40 +441,41 @@ section h2 {
 .planos {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     flex-wrap: wrap;
     max-width: 100%;
 }
 
 .planos-card{
-    background-color: #fff;
+    background-color: white;
     border-radius: 10px;
-    box-shadow: var(--box-shadow);
     padding: 25px;
     width: 320px;
     text-align: left;
     position: relative;
-    border: 2px solid transparent;
-    transition: all 0.3s ease;
     /* garante altura igual e layout flexível */
     display: flex;
     flex-direction: column;
+    margin-bottom: 5%;
 }
 
 .planos-card {
     border-color: var(--text-dark);
-    background-color: var(--secondary-blue);
     transform: scale(1.03);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
-.planos-card h3 {
-    color: var(--text-light);
+
+#plano-popular{
+    transform: scale(1.06);
+}
+
+.planos-card-content{
+    margin-bottom: 20%;
 }
 
 .planos-card h3 {
     font-size: 1.8em;
-    margin-bottom: -10px;
-    color: var(--primary-blue);
+    margin-bottom: -20px;
 }
 
 .planos-card .subtitulo {
@@ -483,18 +484,11 @@ section h2 {
 }
 
 .planos-card .preco {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 700;
     color: var(--primary-blue);
+    margin-top: -40px;
     margin-bottom: 20px;
-}
-
-.planos-card .preco {
-    color: var(--text-light);
-}
-
-.planos-card .subtitulo{
-    color: var(--gray-medium);
 }
 
 .planos-card .preco span {
@@ -516,10 +510,6 @@ section h2 {
     color: var(--text-dark);
 }
 
-.planos-card ul li{
-    color: var(--text-light);
-}
-
 .planos-card ul li::before {
     content: '•'; /* ponto de topicos */
     color: var(--secondary-blue);
@@ -529,42 +519,50 @@ section h2 {
     line-height: 1;
 }
 
-.planos-card.highlighted ul li::before { /* mesma coisa mas so pra mudar a cor */
-    content: '•';
-    color: var(--text-light);
-    position: absolute;
-    left: 0;
-    font-size: 1.2em;
-    line-height: 1;
+#destaque-azul {
+    background-color: #004cff;
+    padding: 20px 30px; /* Espaçamento interno */
+    border-radius: 10px;
+    margin: 0 -25px 20px -25px; /* "escapa" do padding do card */
+    color: white;
+    margin-top: -25px;
 }
 
-/* botão dentro do card-content, alinhado ao fim */
+#destaque-azul h3,
+#destaque-azul .subtitulo,
+#destaque-azul .preco {
+    color: white; /* texto branco para contraste */
+}
+
+#destaque-azul .preco span {
+    color: white; /* garante que /mês fique branco também */
+}
+
 .planos-card .button {
-    margin-top: auto;
-    padding: 15px;
-    position: relative;
-    background-color: var(--secondary-blue);
-    color: var(--text-light);
-    border: none;
-    border-radius: 5px;
+    bottom: 4%;
+    width: 86%;
+    padding: 5%;
+    position: absolute;
+    background-color: var(--text-light);
+    color: var(--secondary-blue);
+    border: 1px solid var(--secondary-blue);
+    border-radius: 10px;
     font-size: 1.1em;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-align: center;
 }
-
 .planos-card .button:hover {
-    background-color: #354edc;
-}
-
-.planos-card.highlighted .button {
-    background-color: white;
-    color: var(--secondary-blue);
-}
-
-.planos-card.highlighted .button:hover {
     background-color: var(--gray-medium);
+}
+
+#botao-popular .button {
+    background-color: var(--secondary-blue);   
+    color: var(--text-light);
+}
+#botao-popular .button:hover {
+    background-color: #354edc;   
 }
 
 .planos-card .selo {
@@ -572,12 +570,12 @@ section h2 {
     color: var(--secondary-blue);
     padding: 5px 15px;
     border-radius: 5px;
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: 600;
     position: absolute;
-    top: 30px;
-    right: -20px;
-    transform: rotate(20deg);
+    top: 145px;
+    right: 230px;
+    opacity: 0.7;
     transform-origin: top right;
     box-shadow: var(--box-shadow);
 }
