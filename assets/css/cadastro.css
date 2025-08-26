@@ -13,7 +13,7 @@ main {
     display: flex;
     width: 75%;
     background-color: #fff;
-    height: 750px;
+    height: 700px;
     border-radius: 10px;
     margin-top: 15px;
     box-shadow: 5px 5px 15px black;
@@ -29,7 +29,6 @@ main {
 .logo {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
     font-size: larger;
     font-weight: bold;
 }
