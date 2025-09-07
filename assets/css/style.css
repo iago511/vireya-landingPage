@@ -10,6 +10,10 @@
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+html{
+    scroll-behavior: smooth; /* Para a tela descer deslizando ao clicar no <a> */
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -41,11 +45,11 @@ a {
     padding: 20px;
 }
 
-/* Header Section */
+/* --------------------------- Header --------------------------- */
 .header {
     background-color: var(--primary-blue);
     color: var(--text-light);
-    padding: 15px 0;
+    padding: 15px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,47 +59,59 @@ a {
     z-index: 1000;
 }
 
-#botaoCadastro{
-    background-color: #2AA0C4;
-    width: 120px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-
-
-.header .logo {
+.logo {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 700;
-    margin-left: 20px;
     color: var(--text-light);
 }
 
-.header nav ul {
+.menu {
+    flex: 1; /* ocupa o espaço central */
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
     list-style: none;
+    display: flex;
+    gap: 30px; /* espaçamento entre os links */
     margin: 0;
     padding: 0;
-    display: flex;
-    margin-right: 20px;
 }
 
-.header nav ul li {
-    margin-left: 30px;
-}
-
-.header nav ul li a {
+.menu ul li a {
     color: var(--text-light);
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
-.header nav ul li a:hover {
+.menu ul li a:hover {
     color: var(--secondary-blue);
 }
 
-/* Hero Section */
-.hero {
+#botaoCadastro {
+    background-color: #2AA0C4;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+#botaoCadastro a {
+    display: block;
+    padding: 8px 16px;
+    color: white;
+    font-weight: 600;
+}
+
+#botaoCadastro:hover{
+    background-color: #248baa;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+/*--------------------------- Header ---------------------------*/
+.principal {
     background-image:
         linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
         url(../img/fotoheader.png);
@@ -115,7 +131,7 @@ a {
 }
 
 
-.hero::before {
+.principal::before {
     content: '';
     position: absolute;
     top: 0;
@@ -123,11 +139,10 @@ a {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
-    /* Dark overlay */
     z-index: -1;
 }
 
-.hero-content {
+.principal-content {
     max-width: 600px;
     background-color: 2895C0;
     color: white;
@@ -141,19 +156,19 @@ a {
     text-align: left;
 }
 
-.hero h1 {
+.principal h1 {
     font-size: 4em;
     margin-bottom: 20px;
     color: var(--text-light);
     font-weight: 700;
 }
 
-.hero p {
+.principal p {
     font-size: 1.5em;
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* Section Styling */
+/*--------------------------- Estilos das sections ---------------------------*/
 section {
     padding: 60px 0;
     text-align: center;
@@ -168,7 +183,6 @@ section h2 {
     margin-bottom: 40px;
     color: var(--primary-blue);
 }
-
 
 /*--------------------------- Beneficios Section ---------------------------*/
 #beneficios {
@@ -295,11 +309,9 @@ section h2 {
 .funcionalidades-row>div {
     flex: 1;
     min-width: 400px;
-    /* Ensure content wraps nicely on smaller screens */
 }
 
 .funcionalidades-row .content {
-    /* cada content (??) vai ter isso */
     text-align: left;
 }
 
