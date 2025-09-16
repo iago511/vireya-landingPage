@@ -5,7 +5,7 @@ body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
     background-color: #EAF2FF;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
 }
 

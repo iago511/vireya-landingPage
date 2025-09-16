@@ -10,4 +10,4 @@ document.getElementById('togglePassword').addEventListener('click', function () 
         eyeIcon.classList.remove('fa-eye-slash');
         eyeIcon.classList.add('fa-eye');
     }
-});
+}); 
