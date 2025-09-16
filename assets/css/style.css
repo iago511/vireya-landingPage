@@ -321,7 +321,7 @@ section h2 {
     margin-bottom: 20px;
 }
 
-.funcionalidades-row.reverse {
+.funcionalidades-row reverse {
     flex-direction: row-reverse;
     /*inverteu*/
 }
