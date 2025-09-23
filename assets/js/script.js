@@ -1,6 +1,7 @@
 document.getElementById('togglePassword').addEventListener('click', function () {
     const passwordInput = document.getElementById('senha');
     const eyeIcon = this.querySelector('i');
+
     
     if (passwordInput.type === 'password') {
         passwordInput.type = 'text';
@@ -12,3 +13,4 @@ document.getElementById('togglePassword').addEventListener('click', function () 
         eyeIcon.classList.add('fa-eye-slash');
     }
 });
+

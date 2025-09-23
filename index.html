@@ -7,29 +7,30 @@
     <title>Vireya</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="/assets/img/vireya icon.png" type="image/x-icon">
+
+    <link rel="shortcut icon" href="/assets/img/vireya_icon.png" type="image/x-icon">
 </head>
 
-<body>
+<body> 
 
     <header class="header">
         <div class="logo">Vireya</div>
-        <nav>
+        <nav class="menu">
             <ul>
                 <li><a href="#">Início</a></li>
-                <li><a href="#">Funcionalidades</a></li>
-                <li><a href="#">Porque Vireya?</a></li>
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Planos</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="cadastro.html">Cadastrar-se</a></li>
+                <li><a href="#funcionalidades">Funcionalidades</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#footer">Contato</a></li>
             </ul>
         </nav>
-    </header>
+        <div id="botaoCadastro">
+            <a href="cadastro.html">Cadastrar-se</a>
+        </div>
+    </header>    
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
+        <section class="principal">
+            <div class="principal-content">
                 <p style="padding: 2%;"><strong style="font-size: 38px;">Gestão inteligente para Estações de
                         Tratamento de Água</strong></p>
                 <p style="padding: 2%; font-size: 20px;">"Preservando nosso bem mais precioso, a água, com tecnologia e
@@ -37,10 +38,11 @@
             </div>
         </section>
 
-        <!------------------------------- BENEFÍCIOS ------------------------------->
 
+        <!------------------------------- BENEFÍCIOS ------------------------------->
+        
         <section id="beneficios">
-            <h2 id="beneficiosTitulo">Benefícios do HydroCore</h2>
+            <h2 id="beneficiosTitulo">Benefícios do Vireya</h2>
             <p id="beneficiosSubtitulo">Simplifique a gestão da sua ETA com nossa solução completa que integra todas as
                 ferramentas, no lugar certo e em um único sistema.</p>
 
@@ -70,7 +72,7 @@
 
         <!------------------------------- FUNCIONALIDADES ------------------------------->
 
-        <section class="funcionalidades-section bg-gray">
+        <section id="funcionalidades" class="funcionalidades-section bg-gray">
             <div class="container">
                 <h2 id="funcionalidades-titulo">Funcionalidades Principais</h2>
                 <p>Conheça as ferramentas que transformam a gestão da sua Estação de Tratamento de Água</p>
@@ -103,7 +105,7 @@
                             <li>Alertas visuais para parâmetros fora do padrão</li>
                         </ul>
                     </div>
-                    <div class="feature-image">
+                    <div class="funcionalidades-image">
                         <img src="https://www.blog.auvo.com/hs-fs/hubfs/image2-2.jpg?width=672&name=image2-2.jpg"
                             style="width:100%; height:auto; border-radius: 8px;">
                     </div>
@@ -213,7 +215,7 @@
                 <p>Acreditamos que a tecnologia pode ser uma poderosa aliada na preservação dos recursos hídricos e na
                     garantia de água de qualidade para todos.</p>
                 <div class="icones">
-                    <div class="icone"></div>
+                    <div class="icone"></div> <!--pode ser de instagram, wpp, etc.-->
                     <div class="icone"></div>
                     <div class="icone"></div>
                 </div>
@@ -222,7 +224,7 @@
 
         <!------------------------------- PLANOS ------------------------------->
 
-        <section class="planos-section bg-gray">
+        <section id="planos" class="planos-section bg-gray">
             <div class="container">
                 <h2>Planos e Preços</h2>
                 <p>Escolha o plano ideal para as necessidades e velocidades da sua estação de tratamento de água.</p>
@@ -290,7 +292,7 @@
 
     <!------------------------------- FOOTER ------------------------------->
 
-    <footer class="footer-vireya">
+    <footer id="footer" class="footer-vireya">
         <div class="footer-container">
             <div class="footer-col">
                 <h2 class="logo">VIREYA</h2>
