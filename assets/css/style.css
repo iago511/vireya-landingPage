@@ -56,8 +56,10 @@ header{
     color: white;
 }
 #bottom-cadastro{
-    border: 1px solid white;
-    padding: 5px;
+    font-style: oblique;
+    text-decoration: underline;
+    padding: 15px;
+    border: 1px white solid;
     border-radius: 10px;
 }
 @media (max-width: 768px) {
@@ -89,7 +91,7 @@ header{
 
 
 .frame-img{
-    background-image: url(imgs/fotoheader.png);
+    background-image: url(/assets/imgs/fotoheader.png);
     background-color: rgba(0, 255, 255, 0);
     align-items: center;
     background-size: cover;
