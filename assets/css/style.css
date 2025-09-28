@@ -5,6 +5,11 @@
     box-sizing: border-box;
 
 }
+html {
+    scroll-padding-top: 160px; /* altura do header */
+    scroll-behavior: smooth;
+}  
+
 h1,
 h2,
 h3,
@@ -319,7 +324,7 @@ header{
 
 
 
-#place{
+#planos{
     background-color: #F7F7F7;
     padding-top: 120px;
     padding-bottom: 100px;
