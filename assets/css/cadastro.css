@@ -1,8 +1,11 @@
+
 body {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, sans-serif;
+
     background-color: #EAF2FF;
     display: flex;
     justify-content: center; 
@@ -227,5 +230,3 @@ input {
     font-size: 14px;
     margin-top: 4px;
   }
- 
-
