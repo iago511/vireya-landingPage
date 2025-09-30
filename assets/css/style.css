@@ -11,7 +11,6 @@
 
 }
 html {
-    scroll-padding-top: 160px; /* altura do header */
     scroll-behavior: smooth;
 }  
 
@@ -176,16 +175,17 @@ header{
 }
 
 
+/* ======================= Funcionalidades ======================= */
 
-
-#funcionalidades {
+.funcionalidades-section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 60px 20px;
     font-family: Arial, sans-serif;
+    padding-bottom: 8%;
 }
   
-#funcionalidades h2 {
+.funcionalidades-section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #0a1a3c;   
@@ -193,12 +193,16 @@ header{
 
 #funcionalidade-title{
     text-align: center;
+    padding-top: 15px;
 }
 #funcionalidade-sub{
+    width: 55%;
+    text-align: center;
     margin: 0 auto;
+    padding-bottom: 50px; /*entre o sub e imagem*/
 }
   
-#funcionalidades > p {
+.funcionalidades-section > p {
     max-width: 800px;
     margin-bottom: 50px;
     color: #444;
@@ -246,9 +250,10 @@ header{
 .reverse > * {
     direction: ltr; /* mantém o texto normal */
 }
+
+
+/* ======================= Porque ======================= */
   
-
-
 #porque{
     max-width: 1200px;
     margin: 0 auto;
